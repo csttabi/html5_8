@@ -1,0 +1,18 @@
+.preview .image{
+    height: 200px;
+    background-color: white;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.preview .image img{
+    max-width: 80%;
+    max-height: 80%;
+    margin: 10px auto 0 auto;
+}
+
+@media (max-width: 766px){
+    .section-preview .preview .image img{
+        width: auto;
+    }
+}
