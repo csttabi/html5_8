@@ -1,25 +1,25 @@
 <div class="section-preview" data-ng-controller="termekCtrl">
-<div class="container">
-<div class="row">
-<div class="section-preview" data-ng-controller="termekCtrl">
-<div class="container">
-<div class="row">
+    <div class="container">
+        <div class="row">
+            <div class="section-preview" data-ng-controller="termekCtrl">
+                <div class="container">
+                    <div class="row">
 
-            <div class="col-lg-4 col-sm-6" data-ng-repeat="termek in termekek track by $index">
-            <div class="preview">
-              <div class="image">
-                <img data-ng-src="{{termek.img}}" class="img-responsive" alt="Cerulean">
-              </div>
-              <div class="options">
-                <h3>{{termek.name}}</h3>
-                <p>{{termek.desc}}</p>
-                <div class="btn-group">Tovább</div>
-              </div>
+                        <div class="col-lg-4 col-sm-6" data-ng-repeat="termek in termekek track by $index">
+                            <div class="preview">
+                                <div class="image">
+                                    <img data-ng-src="{{termek.img}}" class="img-responsive" alt="Cerulean">
+                                </div>
+                                <div class="options">
+                                    <h3>{{termek.name}}</h3>
+                                    <p>{{termek.desc}}</p>
+                                    <div class="btn-group">{{termek.price}} Ft</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-</div>
-</div>
-</div>
-</div>
-</div>
+        </div>
+    </div>
 </div>

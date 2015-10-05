@@ -1,18 +1,54 @@
-.preview .image{
+.preview .image {
     height: 200px;
     background-color: white;
+    line-height: 200px;
     padding-bottom: 0;
     margin-bottom: 0;
 }
 
-.preview .image img{
+.preview .image img {
     max-width: 80%;
     max-height: 80%;
     margin: 10px auto 0 auto;
 }
 
-@media (max-width: 766px){
-    .section-preview .preview .image img{
+.section-preview .preview {
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.section-preview .preview .options {
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    right: 15px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.section-preview .preview:hover .options {
+    position: absolute;
+    bottom: 10px;
+    opacity: 0.9;
+    background-color: aqua;
+}
+
+@keyframes desc {
+    0%: {
+        bottom: 0;
+        opacity: 0;
+    }
+    10%: {
+        bottom: 10px;
+        opacity: 0.3;
+    }
+    100%: {
+        opacity: 0.8;
+    }
+}
+
+@media (max-width: 766px) {
+    .section-preview .preview .image img {
         width: auto;
     }
 }
