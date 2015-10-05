@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="cipobolt">
+  <head>
+    <meta charset="utf-8">
+    <title>Bootswatch: Free themes for Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" id="main-css" href="lib/bootswatch/cerulean/bootstrap.css" media="screen">
+    <link rel="stylesheet" href="lib/bootswatch/bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="lib/bootswatch/assets/css/custom.min.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="./bower_components/html5shiv/dist/html5shiv.js"></script>
+      <script src="./bower_components/respond/dest/respond.min.js"></script>
+    <![endif]-->
+   
+  </head>
+  <body id="home">
+    <div class="navbar navbar-default navbar-fixed-top navbar-transparent">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="./" class="navbar-brand"><img src="lib/bootswatch/assets/img/logo-nav.png">Aranycipő</a>
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Themes <span class="caret"></span></a>
+              <ul id="theme-selector" class="dropdown-menu" aria-labelledby="themes">
+                  <li><a href="./cerulean/">Cerulean</a></li>
+                <li><a href="./cosmo/">Cosmo</a></li>
+                <li><a href="./cyborg/">Cyborg</a></li>
+                <li><a href="./darkly/">Darkly</a></li>
+                <li><a href="./flatly/">Flatly</a></li>
+                <li><a href="./journal/">Journal</a></li>
+                <li><a href="./lumen/">Lumen</a></li>
+                <li><a href="./paper/">Paper</a></li>
+                <li><a href="./readable/">Readable</a></li>
+                <li><a href="./sandstone/">Sandstone</a></li>
+                <li><a href="./simplex/">Simplex</a></li>
+                <li><a href="./slate/">Slate</a></li>
+                <li><a href="./spacelab/">Spacelab</a></li>
+                <li><a href="./superhero/">Superhero</a></li>
+                <li><a href="./united/">United</a></li>
+                <li><a href="./yeti/">Yeti</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="./help/">Help</a>
+            </li>
+            <li>
+              <a href="http://news.bootswatch.com">Blog</a>
+            </li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="http://builtwithbootstrap.com/" target="_blank">Built With Bootstrap</a></li>
+            <li><a href="https://wrapbootstrap.com/?ref=bsw" target="_blank">WrapBootstrap</a></li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="splash">
+      <div class="container">
+
+       
+
+      </div>
+    </div>
+
+   
+    <div class="section-tout">
+      <div class="container">
+
+<!--Jelmondatok-->
+        <div class="row">
+          <div class="col-lg-4 col-sm-6">
+            <h3><i class="fa fa-gift"></i>A legjobb termékek</h3>
+            <p>Simply download a CSS file and replace the one in Bootstrap. No messing around with hex values.</p>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <h3><i class="fa fa-money"></i>A legjobb árakon</h3>
+            <p>Bootstrap themes are released under the MIT License and maintained by the community on <a target="_blank" href="https://github.com/thomaspark/bootswatch">GitHub</a>.</p>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <h3><i class="fa fa-users"></i>A legjobb vevőknek</h3>
+            <p>Themes are built for the latest version of Bootstrap. <a href="2/">Version 2</a> and <a target="_blank" href="https://github.com/thomaspark/bootswatch/tags">others</a> are also available to download.</p>
+          </div>
+        </div>
+<!--/.Jelmondatok-->
+     
+      </div>
+    </div>
+
+    <div class="section-preview" data-ng-controller="termekCtrl">
+      <div class="container">
+        <div class="row">
+
+         
+         
+         
+<!-- Termék  -->
+          <div class="col-lg-4 col-sm-6" data-ng-repeat="termek in termekek track by $index">
+            <div class="preview">
+              <div class="image">
+                <img data-ng-src="termek.img" class="img-responsive" alt="Cerulean">
+              </div>
+              <div class="options">
+                <h3>{{termek.name}}</h3>
+                <p>Cipő</p>
+                <div class="btn-group">Tovább</div>
+              </div>
+            </div>
+          </div>
+<!-- /.Termék  -->
+
+
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <footer>
+        <div class="row">
+          <div class="col-lg-12">
+
+            <ul class="list-unstyled">
+              <li class="pull-right"><a href="#top">Back to top</a></li>
+              <li><a href="http://news.bootswatch.com" onclick="pageTracker._link(this.href); return false;">Blog</a></li>
+              <li><a href="http://feeds.feedburner.com/bootswatch">RSS</a></li>
+              <li><a href="https://twitter.com/bootswatch">Twitter</a></li>
+              <li><a href="https://github.com/thomaspark/bootswatch/">GitHub</a></li>
+              <li><a href="./help/#api">API</a></li>
+              <li><a href="./help/#support">Support</a></li>
+            </ul>
+            <p>Made by <a href="http://thomaspark.co" rel="nofollow">Thomas Park</a>. Contact him at <a href="mailto:thomas@bootswatch.com">thomas@bootswatch.com</a>.</p>
+            <p>Code released under the <a href="https://github.com/thomaspark/bootswatch/blob/gh-pages/LICENSE">MIT License</a>.</p>
+            <p>Based on <a href="http://getbootstrap.com" rel="nofollow">Bootstrap</a>. Icons from <a href="http://fortawesome.github.io/Font-Awesome/" rel="nofollow">Font Awesome</a>. Web fonts from <a href="http://www.google.com/webfonts" rel="nofollow">Google</a>.</p>
+
+          </div>
+        </div>
+
+      </footer>
+
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="lib/bootswatch/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="lib/bootswatch/assets/js/custom.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>    
+    <script src="js/main.js"></script>
+  </body>
+</html>
